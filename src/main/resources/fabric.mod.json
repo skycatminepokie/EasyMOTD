@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "easymotd",
+  "version": "${version}",
+  "name": "EasyMOTD",
+  "description": "Easily manage custom MOTDs",
+  "authors": [
+    "skycatminepokie"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/easymotd/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "client": [
+      "skycat.easymotd.client.EasyMOTDClient"
+    ],
+    "main": [
+      "skycat.easymotd.EasyMOTD"
+    ]
+  },
+  "mixins": [
+    "easymotd.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "1.19"
+  }
+}
